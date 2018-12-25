@@ -1,0 +1,108 @@
+#middle_container {
+    position: relative;
+    width: 90%;
+    height: auto;
+    /* text-align: center; */
+    border-bottom: 3px solid #f88d00;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+#intro {
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Quattrocento', serif;
+    font-size: larger;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f88d00;
+}
+
+#resume {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#resume_head {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+#experience_head, #education_head, #publications_head, #skills_head, #interests_head {
+    position: relative;
+    text-align: left;
+    font-family: 'Alegreya SC', serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#experience_body, #education_body, #publications_body, #skills_body, #interests_body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-left: 20px;
+}
+
+.exps, .edus {
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.company {
+    display: inline-block;
+}
+
+.company_name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    float: left;
+}
+
+.company_location {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 25px;
+    float: left;
+    text-align: right;
+}
+
+.dates {
+    font-size: 13px;
+}
+
+.skill, .interest {
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.skill {
+    background: green;
+    color: white;
+}
+
+.interest {
+    background: lightblue;
+    color: white;
+}
+
+.inlineimg {
+    max-height: 15px;
+}

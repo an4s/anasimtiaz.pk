@@ -2,18 +2,14 @@
     position: relative;
     width: 90%;
     height: auto;
-    /* text-align: center; */
     border-bottom: 3px solid #f88d00;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
 
 #intro {
     width: auto;
     height: 100%;
     display: inline-block;
-    /* font-family: 'Libre Baskerville', serif; */
-    /* font-family: 'Philosopher', sans-serif; */
     font-family: 'Quattrocento', serif;
     font-size: larger;
     text-align: justify;

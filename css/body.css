@@ -4,6 +4,7 @@ body {
     margin: 1vh auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: context-menu;
 }
 
 #self_img {

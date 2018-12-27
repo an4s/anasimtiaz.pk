@@ -19,7 +19,7 @@ function drawCanvas(ratio)
             canvas.setAttribute("height", new_height * dpi);
 
             var ratio = 13;
-            var fontSize = canvas.getAttribute("width") / ratio, offset = fontSize / 7;
+            var fontSize = canvas.getAttribute("width") / ratio, offset = fontSize / 7.5;
 
             ctx.font = fontSize + "px Fredericka the Great";
             ctx.textAlign = "center";

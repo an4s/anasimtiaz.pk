@@ -4,7 +4,7 @@ function drawCanvas(ratio)
         google: {
           families: [
                      'Fredericka the Great',
-                     'Cinzel Decorative'
+                     'Tinos'
                     ]
         },
         active: function() {
@@ -19,15 +19,15 @@ function drawCanvas(ratio)
             canvas.setAttribute("height", new_height * dpi);
 
             var ratio = 13;
-            var fontSize = canvas.getAttribute("width") / ratio, offset = fontSize / 7.5;
+            var fontSize = canvas.getAttribute("width") / ratio, offset = fontSize / 10;
 
             ctx.font = fontSize + "px Fredericka the Great";
             ctx.textAlign = "center";
             ctx.fillText("Muhammad Anas Imtiaz", canvas.width/2, canvas.height/2);
 
-            ctx.font = (fontSize - 4.75 * offset) + "px Cinzel Decorative";
+            ctx.font = (fontSize - 4.75 * offset) + "px Tinos";
             ctx.textAlign = "center";
-            ctx.fillText("Ph.D. candidate, Computer Engineering, Boston University", canvas.width/2, canvas.height/2 + fontSize/2 + offset * 3);
+            ctx.fillText("Ph.D. candidate & Research Assistant at Boston University", canvas.width/2, canvas.height/2 + fontSize/2 + offset * 3);
         }
     });
 }

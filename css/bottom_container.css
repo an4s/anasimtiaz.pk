@@ -13,13 +13,13 @@
     display: inline-block;
 }
 
-#yahoo, #gmail, #scholar, #linkedin, #github, #skype {
+#yahoo, #gmail, #scholar, #linkedin, #github, #skype, #maps {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
 }
 
-#yahoo_logo, #gmail_logo, #scholar_logo, #linkedin_logo, #github_logo, #skype_logo {
+#yahoo_logo, #gmail_logo, #scholar_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
     max-height: 2vw;
     padding-left: 10px;
 }

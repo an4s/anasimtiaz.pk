@@ -36,5 +36,14 @@ ul {
     color: black;
 }
 footer {
-    height: 0.5vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#download_link {
+    text-decoration: none;
+    color: blue;
 }

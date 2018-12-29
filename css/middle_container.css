@@ -31,7 +31,7 @@
     font-weight: 1000;
 }
 
-#experience_head, #education_head, #publications_head, #skills_head, #interests_head {
+#experience_head, #education_head, #publications_head, #languages_head, #skills_head, #interests_head {
     position: relative;
     text-align: left;
     font-family: 'Alegreya SC', serif;
@@ -39,7 +39,7 @@
     font-weight: 600;
 }
 
-#experience_body, #education_body, #publications_body, #skills_body, #interests_body {
+#experience_body, #education_body, #publications_body, #languages_body, #skills_body, #interests_body {
     font-family: 'IBM Plex Sans', sans-serif;
     padding-left: 20px;
 }
@@ -96,6 +96,32 @@
 
 .tasks {
     display: none;
+}
+
+.language {
+    display: flex;
+    height: auto;
+}
+
+.language_name, .circles {
+    display: block;
+    max-height: 25px;
+}
+
+.language_name {
+    min-width: 60px;
+}
+
+.filled_circle, .half_circle, .empty_circle {
+    stroke: lightseagreen;
+}
+
+.filled_circle, .half_circle {
+    fill: lightgreen;
+}
+
+.empty_circle {
+    fill: white;
 }
 
 .skill, .interest {

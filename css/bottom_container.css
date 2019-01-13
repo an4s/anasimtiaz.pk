@@ -23,3 +23,7 @@
     max-height: 2vw;
     padding-left: 10px;
 }
+
+#yahoo_logo, #gmail_logo:hover {
+    cursor: pointer;
+}

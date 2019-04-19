@@ -1,0 +1,153 @@
+{
+    "experiences" : [
+        {
+            "head" : {
+                "title" : "Research Assistant",
+                "company" : {
+                    "company_name": "Boston University",
+                    "company_location" : "Boston Massachusetts, USA"
+                },
+                "dates" : {
+                    "from" : "September, 2017",
+                    "to" : "Present"
+                }
+            },
+            "tasks" : [
+                "Current research looks into the presence and effects of churn in the Bitcoin network"
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Graduate Teaching Assistant",
+                "company" : {
+                    "company_name": "Boston University",
+                    "company_location" : "Boston Massachusetts, USA"
+                },
+                "dates" : {
+                    "from" : "January, 2019",
+                    "to" : "Present"
+                }
+            },
+            "tasks" : [
+                "Graduate teaching assistant for the undergraduate course \"EC330: Applied Algorithms for Engineers\" with Professor Tali Moreshet.",
+                "Responsible for:",
+                [
+                    "Providing solutions for homework",
+                    "Holding office hours once per week",
+                    "Holding discussion sessions twice per week",
+                    "Resolving grading and other administrative issues"
+                ]
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Graduate Teaching Assistant",
+                "company" : {
+                    "company_name": "Boston University",
+                    "company_location" : "Boston Massachusetts, USA"
+                },
+                "dates" : {
+                    "from" : "September, 2018",
+                    "to" : "December, 2018"
+                }
+            },
+            "tasks" : [
+                "Graduate teaching assistant for the undergraduate course \"EC330: Applied Algorithms for Engineers\" with Professor Tali Moreshet.",
+                "Responsible for:",
+                [
+                    "Managing undergraduate teaching assistants",
+                    "Providing solutions for homework",
+                    "Holding office hours once per week",
+                    "Holding discussion sessions twice per week",
+                    "Resolving grading and other administrative issues"
+                ]
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Senior Software Development Engineer",
+                "company" : {
+                    "company_name" : "Mentor Graphics",
+                    "company_location" : "Lahore, Pakistan"
+                },
+                "dates" : {
+                    "from" : "August, 2016",
+                    "to" : "July, 2017"
+                }
+            },
+            "tasks" : [
+                "Worked on the Microcontroller Abstraction Layer (MCAL) development and testing for the Input Capture Unit (ICU) for AUTomotive Open System ARchitecture (AUTOSAR)",
+                "Developed ICU's configurations and helped with configuration generator development and testing"
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Software Development Engineer",
+                "company" : {
+                    "company_name" : "Mentor Graphics",
+                    "company_location": "Lahore, Pakistan"
+                },
+                "dates": {
+                    "from" : "December, 2014",
+                    "to" : "July, 2016"
+                }
+            },
+            "tasks" : [
+                "Worked on Mentor's 'Volcano Target Package' (VTP) and 'LIN Target Package' (LTP)",
+                "Responsible for upgrading and maintaining Controller Area Network (CAN) and Local Interconnect Network (LIN) network protocol stacks",
+                "Worked on CAN/LIN controller driver and configuration generation tool development and testing for different microcontroller architectures",
+                "Performed AUTOSAR Diagnostics over IP module's test enhancement and development by identifying cases with the help of code coverage tools",
+                "Automated various tasks such as building tests, working with SourceGear Vault etc. using Windows Batch, UNIX Shell and Python scripting languages",
+                "Experience with using various debugging environments such as Lauterbach, Renesas' Cubesuite+, NXP's CodeWarrior, TI's CodeComposer Studios, and more",
+                "Provided customer support regarding service requests and maintanence"
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Lab Instructor (visiting faculty)",
+                "company" : {
+                    "company_name" : "National University of Computer & Emerging Sciences",
+                    "company_location" : "Lahore, Pakistan"
+                },
+                "dates" : {
+                    "from" : "August, 2015",
+                    "to" : "December, 2015"
+                }
+            },
+            "tasks" : [
+                "Taught C++ programming, algorithms and pseudocode"
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Lab Instructor",
+                "company" : {
+                    "company_name" : "National University of Computer & Emerging Sciences",
+                    "company_location" : "Lahore, Pakistan"
+                },
+                "dates" : {
+                    "from" : "August, 2014",
+                    "to" : "December, 2014"
+                }
+            },
+            "tasks" : [
+                "Taught C++ programming, algorithms and pseudocode",
+                "Taught assembly language for 8086 architecture using Netwide Assembler (NASM) and Advanced Full Debugger (AFD)"
+            ]
+        },
+        {
+            "head" : {
+                "title" : "Intern",
+                "company" : {
+                    "company_name" : "Fatima Memorial Hospital",
+                    "company_location" : "Lahore, Pakistan"
+                },
+                "dates" : {
+                    "from" : "June, 2008",
+                    "to" : "June, 2008"
+                }
+            },
+            "tasks" : []
+        }
+    ]
+}

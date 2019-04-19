@@ -31,7 +31,7 @@
     font-weight: 1000;
 }
 
-#experience_head, #education_head, #publications_head, #languages_head, #skills_head, #interests_head {
+#experiences_head, #education_head, #publications_head, #presentations_head, #extracurriculars_head, #languages_head, #skills_head, #interests_head {
     position: relative;
     text-align: left;
     font-family: 'Alegreya SC', serif;
@@ -39,7 +39,7 @@
     font-weight: 600;
 }
 
-#experience_body, #education_body, #publications_body, #languages_body, #skills_body, #interests_body {
+#experiences_body, #education_body, #publications_body, #presentations_body, #extracurriculars_body, #languages_body, #skills_body, #interests_body {
     font-family: 'IBM Plex Sans', sans-serif;
     padding-left: 20px;
 }

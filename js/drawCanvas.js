@@ -1,4 +1,4 @@
-function drawCanvas(ratio)
+function drawCanvas()
 {
     WebFont.load({
         google: {

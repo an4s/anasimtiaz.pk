@@ -27,3 +27,15 @@
 #yahoo_logo, #gmail_logo:hover {
     cursor: pointer;
 }
+
+@media all and (max-width: 768px) {
+    #logos {
+        width: 50vw;
+    }
+    #yahoo_logo, #gmail_logo, #scholar_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
+        max-height: 9vw;
+    }
+    #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
+        padding-top: 5px;
+    }
+}

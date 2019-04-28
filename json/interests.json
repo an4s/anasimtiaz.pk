@@ -1,0 +1,19 @@
+{
+    "interests" : [
+        {
+            "interest" : "Technical articles"
+        },
+        {
+            "interest" : "Reading"
+        },
+        {
+            "interest" : "Travelling"
+        },
+        {
+            "interest" : "Photography"
+        },
+        {
+            "interest" : "Pizza"
+        }
+    ]
+}

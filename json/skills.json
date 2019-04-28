@@ -1,0 +1,34 @@
+{
+    "skills" : [
+        {
+            "skill" : "C/C++"
+        },
+        {
+            "skill" : "MATLAB"
+        },
+        {
+            "skill" : "Python"
+        },
+        {
+            "skill" : "Microsoft Office"
+        },
+        {
+            "skill" : "Communication"
+        },
+        {
+            "skill" : "Time Management"
+        },
+        {
+            "skill" : "Multitasking"
+        },
+        {
+            "skill" : "Efficient"
+        },
+        {
+            "skill" : "Responsible"
+        },
+        {
+            "skill" : "Adaptable"
+        }
+    ]
+}

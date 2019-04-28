@@ -36,9 +36,25 @@ function extractJSON(t)
                     $.each(exp.tasks, function(j, task)
                     {
                         var li_task = document.createElement('li');
-                        li_task.innerText = task;
-                        li_task.className = "li_plus";
-                        ul_tasks.appendChild(li_task);
+                        if (jQuery.type(task) === "string")
+                        {
+                            li_task.innerText = task;
+                            li_task.className = "li_plus";
+                            ul_tasks.appendChild(li_task);
+                        }
+                        else if (jQuery.type(task) === "array")
+                        {
+                            var ul_subtasks = document.createElement("ul");
+                            ul_subtasks.className = "ul_plus";
+                            for (var i = 0; i < task.length; i++)
+                            {
+                                var li_subtask = document.createElement("li");
+                                li_subtask.className = "li_plus";
+                                li_subtask.innerText = task[i];
+                                ul_subtasks.appendChild(li_subtask);
+                            }
+                            ul_tasks.lastChild.appendChild(ul_subtasks);
+                        }
                     });
                     div_company.appendChild(div_company_name);
                     div_company.appendChild(div_company_location);
@@ -61,7 +77,7 @@ function extractJSON(t)
                 $.each(json.presentations, function(i, pres) {
                     var li_pres = document.createElement("li");
                     li_pres.className = "li_plus";
-                    li_pres.innerText = pres.body;
+                    li_pres.innerText = pres.presentation;
                     ul_pres.appendChild(li_pres);
                 });
                 document.getElementById("presentations_body").appendChild(ul_pres);
@@ -76,10 +92,34 @@ function extractJSON(t)
                 $.each(json.extracurriculars, function(i, ec) {
                     var li_ec = document.createElement("li");
                     li_ec.className = "li_plus";
-                    li_ec.innerText = ec.body;
+                    li_ec.innerText = ec.extracurricular;
                     ul_ec.appendChild(li_ec);
                 });
                 document.getElementById("extracurriculars_body").appendChild(ul_ec);
+            });
+            break;
+        }
+        case "skills":
+        {
+            $.getJSON("../json/skills.json", function(json) {
+                $.each(json.skills, function(i, skill) {
+                    var div_skill = document.createElement("div");
+                    div_skill.className = "skill";
+                    div_skill.innerText = skill.skill;
+                    document.getElementById("skills_body").appendChild(div_skill);
+                });
+            });
+            break;
+        }
+        case "interests":
+        {
+            $.getJSON("../json/interests.json", function(json) {
+                $.each(json.interests, function(i, interest) {
+                    var div_interest = document.createElement("div");
+                    div_interest.className = "interest";
+                    div_interest.innerText = interest.interest;
+                    document.getElementById("interests_body").appendChild(div_interest);
+                });
             });
             break;
         }

@@ -5,11 +5,11 @@ function toggleCollapse(obj)
     if (window.getComputedStyle(child, null).getPropertyValue("display") == "none")
     {
         child.style.display = "block";
-        obj.childNodes[0].src = "../img/minus.png";
+        obj.children[0].src = "../img/minus.png";
     }
     else
     {
         child.style.display = "none";
-        obj.childNodes[0].src = "../img/plus.png";
+        obj.children[0].src = "../img/plus.png";
     }
 }

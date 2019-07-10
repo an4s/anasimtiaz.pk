@@ -69,6 +69,24 @@ function extractJSON(t)
             });
             break;
         }
+        case "publications":
+        {
+            $.getJSON("../json/publications.json", function(json) {
+                var ul_pubs = document.createElement("ul");
+                ul_pubs.className = "ul_plus";
+                $.each(json.publications, function(i, pub) {
+                    var li_pub = document.createElement("li");
+                    li_pub.className = "li_plus";
+                    if (pub.link)
+                        li_pub.innerHTML = "<a href='" + pub.link + "' target='_blank' class='pubLink'>" + pub.title + "</a>";
+                    else
+                        li_pub.innerHTML = pub.title;
+                    ul_pubs.appendChild(li_pub);
+                });
+                document.getElementById("publications_body").appendChild(ul_pubs);
+            });
+            break;
+        }
         case "presentations":
         {
             $.getJSON("../json/presentations.json", function(json) {

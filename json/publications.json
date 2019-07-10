@@ -1,0 +1,20 @@
+{
+    "publications" : [
+        {
+            "title" : "Imtiaz, Muhammad Anas, et al. \"Churn in the Bitcoin Network: Characterization and Impact.\" <i>2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</i>. IEEE, 2019.",
+            "link"  : "https://doi.org/10.1109/BLOC.2019.8751297"
+        },
+        {
+            "title" : "Bhatti, Omer Saleem. \"Adaptive Collaborative Position Control of a Tendon-Driven Robotic Finger.\" <i>Journal of Control Engineering and Applied Informatics</i> 20.2 (2018): 87-99.",
+            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=5278"
+        },
+        {
+            "title" : "Bhatti, Omer Saleem, Khalid Mehmood-ul-Hasan, and Muhammad Anas Imtiaz. \"Attitude control and stabilization of a two-wheeled self-balancing robot.\" <i>Journal of Control Engineering and Applied Informatics</i> 17.3 (2015): 98-104.",
+            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=2657"
+        },
+        {
+            "title" : "Nisar, Osama, et al. \"Performance Optimization of a Flex Sensor Based Glove for Hand Gestures Recognition and Translation.\" <i>International Journal of Engineering Research and Technology (IJERT)</i> 3.5 (2014).",
+            "link"  : "https://www.ijert.org/phocadownload/V3I5/IJERTV3IS051615.pdf"
+        }
+    ]
+}

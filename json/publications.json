@@ -1,20 +1,42 @@
 {
     "publications" : [
         {
-            "title" : "Imtiaz, Muhammad Anas, et al. \"Churn in the Bitcoin Network: Characterization and Impact.\" <i>2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</i>. IEEE, 2019.",
-            "link"  : "https://doi.org/10.1109/BLOC.2019.8751297"
+            "title" : "<u>M. A. Imtiaz</u>, D. Starobinski, and A. Trachtenberg, <b>\"Investigating Orphan Transactions in the Bitcoin Network.\"</b> in <i>IEEE Transactions on Network and Service Management</i>, vol. 18, no. 2, pp. 1718-1731, June 2021, doi: 10.1109/TNSM.2021.3056949.",
+            "link"  : "https://doi.org/10.1109/TNSM.2021.3056949",
+            "type"  : "j"
         },
         {
-            "title" : "Bhatti, Omer Saleem. \"Adaptive Collaborative Position Control of a Tendon-Driven Robotic Finger.\" <i>Journal of Control Engineering and Applied Informatics</i> 20.2 (2018): 87-99.",
-            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=5278"
+            "title" : "<u>M. A. Imtiaz</u>, D. Starobinski, A. Trachtenberg, and N. Younis, <b>\"Churn in the Bitcoin Network.\"</b> in <i>IEEE Transactions on Network and Service Management</i>, vol. 18, no. 2, pp. 1598-1615, June 2021, doi: 10.1109/TNSM.2021.3050428.",
+            "link"  : "https://doi.org/10.1109/TNSM.2021.3050428",
+            "type"  : "j"
         },
         {
-            "title" : "Bhatti, Omer Saleem, Khalid Mehmood-ul-Hasan, and Muhammad Anas Imtiaz. \"Attitude control and stabilization of a two-wheeled self-balancing robot.\" <i>Journal of Control Engineering and Applied Informatics</i> 17.3 (2015): 98-104.",
-            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=2657"
+            "title" : "<u>M. A. Imtiaz</u>, D. Starobinski, and A. Trachtenberg, <b>\"Characterizing Orphan Transactions in the Bitcoin Network.\"</b> <i>2020 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</i>, Toronto, ON, Canada, 2020, pp. 1-9, doi: 10.1109/ICBC48266.2020.9169449.",
+            "link"  : "https://doi.org/10.1109/ICBC48266.2020.9169449",
+            "type"  : "c",
+            "other" : [
+                "Best Paper Award"
+            ]
         },
         {
-            "title" : "Nisar, Osama, et al. \"Performance Optimization of a Flex Sensor Based Glove for Hand Gestures Recognition and Translation.\" <i>International Journal of Engineering Research and Technology (IJERT)</i> 3.5 (2014).",
-            "link"  : "https://www.ijert.org/phocadownload/V3I5/IJERTV3IS051615.pdf"
+            "title" : "<u>M. A. Imtiaz</u>, D. Starobinski, A. Trachtenberg, and N. Younis, <b>\"Churn in the Bitcoin Network: Characterization and Impact.\"</b> <i>2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</i>, Seoul, Korea (South), 2019, pp. 431-439, doi: 10.1109/BLOC.2019.8751297.",
+            "link"  : "https://doi.org/10.1109/BLOC.2019.8751297",
+            "type"  : "c"
+        },
+        {
+            "title" : "O. Saleem, F. Abbas, M. U. Khan, <u>M. A. Imtiaz</u>, and S. Khalid, <b>\"Adaptive Collaborative Position Control of a Tendon-Driven Robotic Finger.\"</b> <i>Journal of Control Engineering and Applied Informatics</i> 20.2 (2018): 87-99.",
+            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=5278",
+            "type"  : "j"
+        },
+        {
+            "title" : "O. S. Bhatti, K. Mehmood-ul-Hasan, and <u>M. A. Imtiaz</u>, <b>\"Attitude control and stabilization of a two-wheeled self-balancing robot.\"</b> <i>Journal of Control Engineering and Applied Informatics</i> 17.3 (2015): 98-104.",
+            "link"  : "http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=2657",
+            "type"  : "j"
+        },
+        {
+            "title" : "O. Nisar, <u>M. A. Imtiaz</u>, S. Hussain and O. Saleem, <b>\"Performance Optimization of a Flex Sensor Based Glove for Hand Gestures Recognition and Translation.\"</b> <i>International Journal of Engineering Research and Technology (IJERT)</i> 3.5 (2014): 1565-1570.",
+            "link"  : "https://www.ijert.org/phocadownload/V3I5/IJERTV3IS051615.pdf",
+            "type"  : "j"
         }
     ]
 }

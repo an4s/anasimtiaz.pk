@@ -2,18 +2,27 @@
     "experiences" : [
         {
             "head" : {
-                "title" : "Graduate Research Assistant",
+                "title" : "Doctoral Research Fellow",
                 "company" : {
                     "company_name": "Boston University",
                     "company_location" : "Boston Massachusetts, USA"
                 },
                 "dates" : {
                     "from" : "September, 2017",
-                    "to" : "Present"
+                    "to" : "January, 2022"
                 }
             },
             "tasks" : [
-                "Current research looks into the presence and effects of churn in the Bitcoin network"
+                "<b>Dissertation title:</b> Measuring and improving the performance of the Bitcoin network",
+                [
+                    "Investigated presence and impact of churn in the Bitcoin network",
+                    "Collected data from Bitcoin blockchain crawler showing 97% nodes experience churn; fitted best model to data; performed live measurements on Bitcoin network",
+                    "Showed that performance of current protocol degrades in presence of churn",
+                    "Designed, implemented, and evaluated a novel synchronization scheme to mitigate effects of churn",
+                    "Studied characteristics of orphan transactions in the Bitcoin network",
+                    "Measured network overhead incurred by a node in the network, configured with default parameters, due to orphan transactions",
+                    "Observed network overhead with a variation of parameter values and suggested a simple fix resulting in the least overhead"
+                ]
             ]
         },
         {

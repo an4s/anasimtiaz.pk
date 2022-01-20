@@ -1,13 +1,28 @@
 {
     "presentations" : [
         {
-            "presentation" : "April, 2019 - Poster at the New England Networking and Systems Day: Churn in the Bitcoin Network: Characterization and Impact"
+            "presentation" : "Jun, 2020 - Speaker at the <b>Tenth annual BU RISCS seminar on practical security</b>"
         },
         {
-            "presentation" : "January, 2019 - Speaker at the 2019 CISE Graduate Engineering Workshop (CGSW 6.0): Churn in the Bitcoin Network- Characterization and Impact"
+            "presentation" : "May, 2020 - Speaker at the (virtual) <b>IEEE International Conference on Blockchain and Cryptocurrency 2020</b>"
         },
         {
-            "presentation" : "November, 2018 - Poster at the Internet Measurement Conference 2018: Measuring Bitcoin’s Resilience to Churn"
+            "presentation" : "Jun, 2019 - Speaker at the <b>Ninth annual BU RISCS seminar on practical security</b>"
+        },
+        {
+            "presentation" : "May, 2019 - Speaker at the <b>IEEE International Conference on Blockchain and Cryptocurrency 2019</b>"
+        },
+        {
+            "presentation" : "Apr, 2019 - Poster at the <b>New England Networking and Systems Day: \"Churn in the Bitcoin Network: Characterization and Impact\"</b>"
+        },
+        {
+            "presentation" : "Jan, 2019 - Speaker at the <b>2019 CISE Graduate Engineering Workshop (CGSW 6.0): \"Churn in the Bitcoin Network- Characterization and Impact\"</b>"
+        },
+        {
+            "presentation" : "Nov, 2018 - Poster at the <b>Internet Measurement Conference 2018: \"Measuring Bitcoin’s Resilience to Churn\"</b>"
+        },
+        {
+            "presentation" : "Jul, 2018 - Speaker at the <b>Eight annual BU RISCS seminar on practical security</b>"
         }
     ]
 }

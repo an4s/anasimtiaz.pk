@@ -7,6 +7,10 @@ body {
     cursor: context-menu;
 }
 
+.container {
+    width: 100%;
+}
+
 #self_img {
     max-width: auto;
     max-height: 50vh;
@@ -31,10 +35,6 @@ ul {
 	left: 0;
 }
 
-.pubLink {
-    text-decoration: none;
-    color: black;
-}
 footer {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 20px;
@@ -46,4 +46,14 @@ footer {
 #download_link {
     text-decoration: none;
     color: blue;
+}
+
+a.show_icon[target="_blank"]::after{
+    background-image: url(../img/new.png);
+    margin: 0 1px 0 3px;
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: "";
 }

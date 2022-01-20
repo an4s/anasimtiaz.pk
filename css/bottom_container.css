@@ -13,13 +13,13 @@
     display: inline-block;
 }
 
-#yahoo, #gmail, #scholar, #linkedin, #github, #skype, #maps {
+#yahoo, #gmail, #scholar, #orcid, #twitter, #linkedin, #github, #skype, #maps {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
 }
 
-#yahoo_logo, #gmail_logo, #scholar_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
+#yahoo_logo, #gmail_logo, #scholar_logo, #orcid_logo, #twitter_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
     max-height: 2vw;
     padding-left: 10px;
 }
@@ -32,10 +32,19 @@
     #logos {
         width: 50vw;
     }
-    #yahoo_logo, #gmail_logo, #scholar_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
+    #yahoo_logo, #gmail_logo, #scholar_logo, #orcid_logo, #twitter_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
         max-height: 9vw;
     }
     #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
         padding-top: 5px;
+    }
+}
+
+@media all and (max-height: 768px) {
+    #logos {
+        width: 50vw;
+    }
+    #yahoo_logo, #gmail_logo, #scholar_logo, #orcid_logo, #twitter_logo, #linkedin_logo, #github_logo, #skype_logo, #maps_logo {
+        max-height: 5vh;
     }
 }

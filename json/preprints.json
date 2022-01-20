@@ -1,0 +1,12 @@
+{
+    "preprints" : [
+        {
+            "title" : "<u>M. A. Imtiaz</u>, D. Starobinski, and A. Trachtenberg, (2019). <b>\"Characterizing Orphan Transactions in the Bitcoin Network.\"</b> arXiv preprint arXiv:1912.11541.",
+            "link"  : "https://arxiv.org/abs/1912.11541"
+        },
+        {
+            "title" : "N. Younis, <u>M. A. Imtiaz</u>, D. Starobinski, and A. Trachtenberg, (2018). <b>\"Improving Bitcoin's resilience to churn.\"</b> arXiv preprint arXiv:1803.06559.",
+            "link"  : "https://arxiv.org/abs/1803.06559"
+        }
+    ]
+}

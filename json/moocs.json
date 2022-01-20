@@ -1,0 +1,59 @@
+{
+    "moocs" : [
+        {
+            "name"   : "SQL (Basic)",
+            "issuer" : "HackerRank",
+            "link"   : "https://www.hackerrank.com/certificates/78d7997da26e"
+        },
+        {
+            "name"   : "Python (Basic)",
+            "issuer" : "HackerRank",
+            "link"   : "https://www.hackerrank.com/certificates/995a6a8a1d7e"
+        },
+        {
+            "name"   : "Problem Solving (Basic)",
+            "issuer" : "HackerRank",
+            "link"   : "https://www.hackerrank.com/certificates/8ba27e74a07c"
+        },
+        {
+            "name"   : "Smart Contracts",
+            "issuer" : "Coursera",
+            "link"   : "https://www.coursera.org/account/accomplishments/verify/HBWKMKGZ4DJX"
+        },
+        {
+            "name"   : "Blockchain Basics",
+            "issuer" : "Coursera",
+            "link"   : "https://www.coursera.org/account/accomplishments/verify/4RNZCBXBD3GQ"
+        },
+        {
+            "name"   : "C++ for C Programmers",
+            "issuer" : "Coursera",
+            "link"   : "https://www.coursera.org/account/accomplishments/verify/FDLUTH8ELJMC"
+        },
+        {
+            "name"   : "Coursera Mentor Community and Training Course",
+            "issuer" : "Coursera",
+            "link"   : "https://www.coursera.org/account/accomplishments/verify/SLUWKAGZSAMZ"
+        },
+        {
+            "name"   : "Analyzing and Visualizing Data with Power BI",
+            "issuer" : "edX",
+            "link"   : "https://courses.edx.org/certificates/1f69ff8df59b434da4a319dbc64bfe36"
+        },
+        {
+            "name"   : "How to Code: Systematic Program Design - Part 1",
+            "issuer" : "edX",
+            "link"   : "https://courses.edx.org/certificates/afcdf29dba7a41cca0b400a126945709"
+        },
+        {
+            "name"   : "Programming in R for Data Science",
+            "issuer" : "edX",
+            "link"   : "https://courses.edx.org/certificates/385516a1a496486d93fe181130da845c"
+        },
+        {
+            "name"   : "Realtime Bluetooth Networks",
+            "issuer" : "edX",
+            "link"   : "https://courses.edx.org/certificates/08d46a55af5e425f80ea9033aec124bf"
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- include external javascript files -->
+        <!-- Hotjar Tracking Code for https://anasimtiaz.pk/news.html -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2186481,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./js/preLoad.js" type="text/javascript"></script>
+        <script src="./js/beautify.js" type="text/javascript"></script>
+        <script src="./js/handleEvent.js" type="text/javascript"></script>
+        <script src="./js/toggleCollapse.js" type="text/javascript"></script>
+        <script src="./lightbox2/dist/js/lightbox.js"></script>
+        <script src='./php/imgs.php'></script>
+        <script src="./js/extractHTMLFromJSON.js" type="text/javascript"></script>
+        <script src="./js/removeScriptTags.js" type="text/javascript"></script>
+        <!-- include external css files -->
+        <link rel="stylesheet" type="text/css" href="./css/body.css">
+        <link rel="stylesheet" type="text/css" href="./css/top_container.css">
+        <link rel="stylesheet" type="text/css" href="./css/middle_container.css">
+        <link rel="stylesheet" type="text/css" href="./css/bottom_container.css">
+        <link rel="stylesheet" type="text/css" href="./lightbox2/dist/css/lightbox.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:900&display=swap" rel="stylesheet">
+        <title>Muhammad Anas Imtiaz</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="top_container">
+                <div id="top_container_left_div">
+                    <div id="top_container_left_div_name">Muhammad Anas Imtiaz</div>
+                    <div id="top_container_left_div_title"></div>
+                    <script id="title_script" type="text/javascript">
+                        extractJSON("title");
+                        beautify();
+                    </script>
+                </div>
+                <div id="top_container_right_div">
+                    <img id="self_img" src="./img/self.jpg" alt="Photo" />
+                </div>
+            </div>
+            <div id="middle_container">
+                <div id="full_news_container">
+                    <div id="news_head">
+                        News
+                    </div>
+                    <div id="news_body">
+                        <span class="loading">Loading...</span>
+                    </div>
+                    <script id="news_script" type="text/javascript">
+                        extractJSON("news");
+                    </script>
+                    <div id="news_home">
+                        <a href="../" class="moreLink">&lt;&lt;&nbsp;Home</a>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom_container">
+                <div id="logos">
+                    <div id="yahoo">
+                        <a id="yahoo_link" onclick="handleEvent('Y');">
+                            <img id="yahoo_logo" src="./img/logos/yahoo.png" />
+                        </a>
+                    </div>
+                    <div id="gmail">
+                        <a id="gmail_link" onclick="handleEvent('G');">
+                            <img id="gmail_logo" src="./img/logos/gmail.png" />
+                        </a>
+                    </div>
+                    <div id="scholar">
+                        <a href="https://scholar.google.com/citations?user=CWtQ0FUAAAAJ&hl=en" target="_blank">
+                            <img id="scholar_logo" src="./img/logos/scholar.png" />
+                        </a>
+                    </div>
+                    <div id="twitter">
+                        <a href="https://twitter.com/_an4s_" target="_blank">
+                            <img id="twitter_logo" src="./img/logos/twitter.png" />
+                        </a>
+                    </div>
+                    <div id="linkedin">
+                        <a href="https://www.linkedin.com/in/maimtiaz/" target="_blank">
+                            <img id="linkedin_logo" src="./img/logos/linkedin.png" />
+                        </a>
+                    </div>
+                    <div id="github">
+                        <a href="https://github.com/an4s" target="_blank">
+                            <img id="github_logo" src="./img/logos/github.png" />
+                        </a>
+                    </div>
+                    <div id="skype">
+                        <a href="skype:anas-imtiaz?chat" onclick="handleEvent('S');">
+                            <img id="skype_logo" src="./img/logos/skype.png" />
+                        </a>
+                    </div>
+                    <div id="maps">
+                        <a href="https://goo.gl/maps/uCuDTzJ7NFE2" target="_blank">
+                            <img id="maps_logo" src="./img/logos/map.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </body>
+</html>

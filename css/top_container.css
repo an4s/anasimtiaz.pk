@@ -1,6 +1,6 @@
 #top_container {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
     text-align: center;
     border-top: 3px solid #f88d00;
@@ -8,12 +8,12 @@
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: table;
 }
 
 #top_container_left_div {
-    width: 60%;
-    height: 100%;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #top_canvas {
@@ -22,7 +22,15 @@
 }
 
 #top_container_right_div {
-    width: auto;
-    height: 100%;
-    display: inline-block;
+    padding-left: 0.1vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media all and (max-width: 635px) {
+    #self_img {
+        max-height: 30vh;
+        width: auto;
+        height: auto;
+    }
 }

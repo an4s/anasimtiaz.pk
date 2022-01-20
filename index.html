@@ -1,27 +1,43 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- include external javascript files -->
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <!-- Hotjar Tracking Code for https://anasimtiaz.pk/pages/desktop.html -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1558144,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js/drawCanvas.js" type="text/javascript"></script>
-        <script src="js/handleEvent.js" type="text/javascript"></script>
-        <script src="js/toggleCollapse.js" type="text/javascript"></script>
-        <script src="lightbox2/dist/js/lightbox.js"></script>
+        <script src="./js/preLoad.js" type="text/javascript"></script>
+        <script src="./js/beautify.js" type="text/javascript"></script>
+        <script src="./js/handleEvent.js" type="text/javascript"></script>
+        <script src="./js/toggleCollapse.js" type="text/javascript"></script>
+        <script src="./lightbox2/dist/js/lightbox.js"></script>
+        <script src='./php/imgs.php'></script>
+        <script src="./js/extractHTMLFromJSON.js" type="text/javascript"></script>
+        <script src="./js/removeScriptTags.js" type="text/javascript"></script>
         <!-- include external css files -->
-        <link rel="stylesheet" type="text/css" href="css/body.css">
-        <link rel="stylesheet" type="text/css" href="css/top_container.css">
-        <link rel="stylesheet" type="text/css" href="css/middle_container.css">
-        <link rel="stylesheet" type="text/css" href="css/bottom_container.css">
-        <link rel="stylesheet" type="text/css" href="lightbox2/dist/css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="./css/body.css">
+        <link rel="stylesheet" type="text/css" href="./css/top_container.css">
+        <link rel="stylesheet" type="text/css" href="./css/middle_container.css">
+        <link rel="stylesheet" type="text/css" href="./css/bottom_container.css">
+        <link rel="stylesheet" type="text/css" href="./lightbox2/dist/css/lightbox.css">
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:900&display=swap" rel="stylesheet">
         <title>Muhammad Anas Imtiaz</title>
     </head>
 
@@ -29,215 +45,51 @@
         <div id="container">
             <div id="top_container">
                 <div id="top_container_left_div">
-                    <canvas id="top_canvas"></canvas>
-                    <script type="text/javascript">drawCanvas();</script>
+                    <div id="top_container_left_div_name">Muhammad Anas Imtiaz</div>
+                    <div id="top_container_left_div_title"></div>
+                    <script id="title_script" type="text/javascript">
+                        extractJSON("title");
+                        beautify();
+                    </script>
                 </div>
                 <div id="top_container_right_div">
-                    <img id="self_img" src="img/self.jpg" alt="Photo" />
+                    <img id="self_img" src="./img/self.jpg" alt="Photo" />
                 </div>
             </div>
             <!-- <br /><br /> -->
-            <div id="middle_container">
+            <div id="middle_container" w3-include-html="middle_container.html">
                 <div id="intro">
-                    I am a Ph.D. candidate (computer engineering) in the Electrical and Computer Engineering department at the Boston University. I work as a research assistant in the <a href="http://sites.bu.edu/nislab/" target="_blank">Networking and Information Systems</a> lab under the supervision of Prof. <a href="https://www.bu.edu/eng/profile/david-starobinski/" target="_blank">Starobinski</a>. My current research looks into the presence and effects of churn in the Bitcoin network.
+                </div>
+                <script id="intro_script" type="text/javascript">
+                    extractJSON("intro");
+                </script>
+                <div id="news_container">
+                    <div id="news_head">
+                        News
+                    </div>
+                    <div id="news_body">
+                        <span class="loading">Loading...</span>
+                    </div>
+                    <script id="news_script" type="text/javascript">
+                        extractJSON("news_reduced");
+                    </script>
+                    <div id="news_more">
+                        <a href="./news.html" target="_blank" class="moreLink show_icon">More&nbsp;&gt;&gt;</a>
+                    </div>
                 </div>
                 <div id="resume">
                     <div id="resume_head">
                         Resume
                     </div>
-                    <div id="experience">
-                        <div id="experience_head">
+                    <div id="experiences">
+                        <div id="experiences_head">
                             Professional Experience
                         </div>
-                        <div id="experience_body">
-                            <div id="exp_1" class="exps">
-                                <div id="exp_1_head">
-                                    <div>
-                                        <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_1" class="collapse_img" src="img/plus.png" />
-                                            Research Assistant
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            Boston University
-                                        </div>
-                                        <div class="company_location">
-                                            Boston Massachusetts, USA
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        September, 2017 to Present
-                                    </div>
-                                </div>
-                                <div class="tasks">
-                                    <ul type="circle">
-                                        <li>
-                                            Current research looks into the presence and effects of churn in the Bitcoin network
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="exp_2" class="exps">
-                                <div id="exp_2_head">
-                                    <div>
-                                        <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_2" class="collapse_img" src="img/plus.png" />
-                                            Senior Software Development Engineer
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            Mentor Graphics
-                                        </div>
-                                        <div class="company_location">
-                                            Lahore, Pakistan
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        August, 2016 to July, 2017
-                                    </div>
-                                </div>
-                                <div class="tasks">
-                                    <ul type="circle">
-                                        <li>
-                                            Worked on the Microcontroller Abstraction Layer (MCAL) development and testing for the Input Capture Unit (ICU) for AUTomotive Open System ARchitecture (AUTOSAR)
-                                        </li>
-                                        <li>
-                                            Developed ICU's configurations and helped with configuration generator development and testing
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="exp_3" class="exps">
-                                <div id="exp_3_head">
-                                    <div>
-                                        <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_3" class="collapse_img" src="img/plus.png" />
-                                            Software Development Engineer
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            Mentor Graphics
-                                        </div>
-                                        <div class="company_location">
-                                            Lahore, Pakistan
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        December, 2014 to July, 2016
-                                    </div>
-                                </div>
-                                <div class="tasks">
-                                    <ul type="circle">
-                                        <li>
-                                            Worked on Mentor's 'Volcano Target Package' (VTP) and 'LIN Target Package' (LTP)
-                                        </li>
-                                        <li>
-                                            Responsible for upgrading and maintaining Controller Area Network (CAN) and Local Interconnect Network (LIN) network protocol stacks
-                                        </li>
-                                        <li>
-                                            Worked on CAN/LIN controller driver and configuration generation tool development and testing for different microcontroller architectures
-                                        </li>
-                                        <li>
-                                            Performed AUTOSAR Diagnostics over IP module's test enhancement and development by identifying cases with the help of code coverage tools
-                                        </li>
-                                        <li>
-                                            Automated various tasks such as building tests, working with SourceGear Vault etc. using Windows Batch, UNIX Shell and Python scripting languages
-                                        </li>
-                                        <li>
-                                            Experience with using various debugging environments such as Lauterbach, Renesas' Cubesuite+, NXP's CodeWarrior, TI's CodeComposer Studios, and more
-                                        </li>
-                                        <li>
-                                            Provided customer support regarding service requests and maintanence
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="exp_4" class="exps">
-                                <div id="exp_4_head">
-                                    <div>
-                                        <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_4" class="collapse_img" src="img/plus.png" />
-                                            Lab instructor (visiting faculty)
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            National University of Computer &amp; Emerging Sciences
-                                        </div>
-                                        <div class="company_location">
-                                            Lahore, Pakistan
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        August, 2015 to December, 2015
-                                    </div>
-                                </div>
-                                <div class="tasks">
-                                    <ul type="circle">
-                                        <li>
-                                            Taught C++ programming, algorithms and pseudocode
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="exp_5" class="exps">
-                                <div id="exp_5_head">
-                                    <div>
-                                        <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_5" class="collapse_img" src="img/plus.png" />
-                                            Lab instructor
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            National University of Computer &amp; Emerging Sciences
-                                        </div>
-                                        <div class="company_location">
-                                            Lahore, Pakistan
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        August, 2014 to December, 2014
-                                    </div>
-                                </div>
-                                <div class="tasks">
-                                    <ul type="circle">
-                                        <li>
-                                            Taught C++ programming, algorithms and pseudocode
-                                        </li>
-                                        <li>
-                                            Taught assembly language for 8086 architecture using Netwide Assembler (NASM) and Advanced Full Debugger (AFD)
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="exp_6" class="exps">
-                                <div id="exp_6_head">
-                                    <div>
-                                        <span class="title">
-                                            Intern
-                                        </span>
-                                    </div>
-                                    <div class="company">
-                                        <div class="company_name">
-                                            Fatima Memorial Hospital
-                                        </div>
-                                        <div class="company_location">
-                                            Lahore, Pakistan
-                                        </div>
-                                    </div>
-                                    <div class="dates">
-                                        June, 2008 to June, 2008
-                                    </div>
-                                </div>
-                                <div class="tasks">
-
-                                </div>
-                            </div>
+                        <div id="experiences_body">
                         </div>
+                        <script id="experiences_script" type="text/javascript">
+                            extractJSON("experiences");
+                        </script>
                     </div>
                     <div id="education">
                         <div id="education_head">
@@ -248,7 +100,7 @@
                                 <div id="edu_1_head">
                                     <div>
                                         <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_1" class="collapse_img" src="img/plus.png" />
+                                            <div id="collapse_div" class="collapse">+</div>
                                             Ph.D. Computer Engineering
                                         </span>
                                     </div>
@@ -265,14 +117,14 @@
                                     </div>
                                 </div>
                                 <div class="tasks">
-                                    <span style="font-weight:bold;">Relevant courses:</span>&nbsp;&nbsp;Computer Communication Networks, Cybersecurity, Advanced Cybersecurity, IoT Security
+                                    <span style="font-weight:bold;">Relevant courses:</span>&nbsp;&nbsp;Computer Communication Networks, Applied Algorithms and Data Structures for Engineers, Applied Cryptography, Cybersecurity
                                 </div>
                             </div>
                             <div id="edu_2" class="edus">
                                 <div id="edu_2_head">
                                     <div>
                                         <span class="title pointer" onclick="toggleCollapse(this);">
-                                            <img id="collapse_img_exp_1" class="collapse_img" src="img/plus.png" />
+                                            <div id="collapse_div" class="collapse">+</div>
                                             B.Sc. Electrical Engineering
                                         </span>
                                     </div>
@@ -289,7 +141,7 @@
                                     </div>
                                 </div>
                                 <div class="tasks">
-                                    <span style="font-weight:bold;">Achievements:</span>&nbsp;&nbsp;CGPA 3.74/4.00 <a href="img/transcript.jpg" data-lightbox="transcript"><img class="inlineimg" src="img/img.png" /></a>;&nbsp;&nbsp;Silver medalist <a href="img/medal.jpg" data-lightbox="medal"><img class="inlineimg" src="img/img.png" /></a>;&nbsp;&nbsp;Cum Laude <a href="img/degree.jpg" data-lightbox="degree"><img class="inlineimg" src="img/img.png" /></a>;&nbsp;&nbsp;Name on the Dean's list all 8 semesters
+                                    <span style="font-weight:bold;">Achievements:</span>&nbsp;&nbsp;CGPA 3.74/4.00 <a href="./img/transcript.jpg" data-lightbox="transcript"><img class="inlineimg" src="./img/img.png" /></a>;&nbsp;&nbsp;Silver medalist <a href="./img/medal.jpg" data-lightbox="medal"><img class="inlineimg" src="./img/img.png" /></a>;&nbsp;&nbsp;Cum Laude <a href="./img/degree.jpg" data-lightbox="degree"><img class="inlineimg" src="./img/img.png" /></a>;&nbsp;&nbsp;Name on the Dean's list all 8 semesters
                                     <br />
                                     <span style="font-weight:bold;">Relevant courses:</span>&nbsp;&nbsp;Programming for Engineers, Computer Logic Design, Microprocessor Interfacing and Programming, Data Structures, Databases
                                     <br />
@@ -348,7 +200,7 @@
                                     </div>
                                 </div>
                                 <div class="tasks">
-                                        
+
                                 </div>
                             </div>
                             <div id="edu_4" class="edus">
@@ -371,31 +223,80 @@
                                     </div>
                                 </div>
                                 <div class="tasks">
-                                        
+
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="moocs">
+                        <div id="moocs_head">
+                            MOOCs/Certifications
+                        </div>
+                        <div id="moocs_body">
+                        </div>
+                        <script class="extractor" id="moocs_script" type="text/javascript">
+                            extractJSON("moocs");
+                        </script>
                     </div>
                     <div id="publications">
                         <div id="publications_head">
                             Publications
                         </div>
                         <div id="publications_body">
-                            <ul class="ul_plus">
-                                <li class="li_plus">
-                                    Imtiaz, Muhammad Anas, et al. "Churn in the Bitcoin Network: Characterization and Impact." <b>[Accepted]</b> International Conference on Blockchains and Cryptocurrency (2019).
-                                </li>
-                                <li class="li_plus">
-                                    <a href="http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=5278" target="_blank" class="pubLink">Bhatti, Omer Saleem. "Adaptive Collaborative Position Control of a Tendon-Driven Robotic Finger." Journal of Control Engineering and Applied Informatics 20.2 (2018): 87-99.</a>
-                                </li>
-                                <li class="li_plus">
-                                    <a href="http://www.ceai.srait.ro/index.php?journal=ceai&page=article&op=view&path%5B%5D=2657" target="_blank" class="pubLink">Bhatti, Omer Saleem, Khalid Mehmood-ul-Hasan, and Muhammad Anas Imtiaz. "Attitude control and stabilization of a two-wheeled self-balancing robot." Journal of Control Engineering and Applied Informatics 17.3 (2015): 98-104.</a>
-                                </li>
-                                <li class="li_plus">
-                                    <a href="https://www.ijert.org/phocadownload/V3I5/IJERTV3IS051615.pdf" target="_blank" class="pubLink">Nisar, Osama, et al. "Performance Optimization of a Flex Sensor Based Glove for Hand Gestures Recognition and Translation." International Journal of Engineering Research and Technology (IJERT) 3.5 (2014).</a>
-                                </li>
-                            </ul>
                         </div>
+                        <script class="extractor" id="publications_script" type="text/javascript">
+                            extractJSON("publications");
+                        </script>
+                    </div>
+                    <div id="preprints">
+                        <div id="preprints_head">
+                            Pre-prints
+                        </div>
+                        <div id="preprints_body">
+                        </div>
+                        <script class="extractor" id="preprints_script" type="text/javascript">
+                            extractJSON("preprints");
+                        </script>
+                    </div>
+                    <div id="presentations">
+                        <div id="presentations_head">
+                            Presentations
+                        </div>
+                        <div id="presentations_body">
+                        </div>
+                        <script class="extractor" id="presentations_script" type="text/javascript">
+                            extractJSON("presentations");
+                        </script>
+                    </div>
+                    <div id="reviews">
+                        <div id="reviews_head">
+                            Academic Reviews
+                        </div>
+                        <div id="reviews_body">
+                        </div>
+                        <script class="extractor" id="reviews_script" type="text/javascript">
+                            extractJSON("reviews");
+                        </script>
+                    </div>
+                    <div id="grants">
+                        <div id="grants_head">
+                            Grants
+                        </div>
+                        <div id="grants_body">
+                        </div>
+                        <script class="extractor" id="grants_script" type="text/javascript">
+                            extractJSON("grants");
+                        </script>
+                    </div>
+                    <div id="extracurriculars">
+                        <div id="extracurriculars_head">
+                            Extracurriculars
+                        </div>
+                        <div id="extracurriculars_body">
+                        </div>
+                        <script class="extractor" id="extracurriculars_script" type="text/javascript">
+                            extractJSON("extracurriculars");
+                        </script>
                     </div>
                     <div id="languages">
                         <div id="languages_head">
@@ -452,59 +353,20 @@
                             Skills
                         </div>
                         <div id="skills_body">
-                            <div class="skill">
-                                C/C++
-                            </div>
-                            <div class="skill">
-                                MATLAB
-                            </div>
-                            <div class="skill">
-                                Python
-                            </div>
-                            <div class="skill">
-                                Office
-                            </div>
-                            <div class="skill">
-                                Communication
-                            </div>
-                            <div class="skill">
-                                Time Management
-                            </div>
-                            <div class="skill">
-                                Multitasking
-                            </div>
-                            <div class="skill">
-                                Efficient
-                            </div>
-                            <div class="skill">
-                                Responsible
-                            </div>
-                            <div class="skill">
-                                Adaptable
-                            </div>
                         </div>
+                        <script class="extractor" id="skills_script" type="text/javascript">
+                            extractJSON("skills");
+                        </script>
                     </div>
                     <div id="interests">
                         <div id="interests_head">
                             Interests
                         </div>
                         <div id="interests_body">
-                            <div class="interest">
-                                Technical articles
-                            </div>
-                            <div class="interest">
-                                Reading
-                            </div>
-                            <div class="interest">
-                                Travelling
-                            </div>
-                            <div class="interest">
-                                Photography
-                            </div>
-                            <div class="interest">
-                                Pizza
-                            </div>
                         </div>
+                        <script class="extractor" id="interests_script" type="text/javascript">
+                            extractJSON("interests");
+                        </script>
                     </div>
                 </div>
             </div>
@@ -512,45 +374,68 @@
                 <div id="logos">
                     <div id="yahoo">
                         <a id="yahoo_link" onclick="handleEvent('Y');">
-                            <img id="yahoo_logo" src="img/yahoo.png" />
+                            <img id="yahoo_logo" src="./img/logos/yahoo.png" />
                         </a>
                     </div>
                     <div id="gmail">
                         <a id="gmail_link" onclick="handleEvent('G');">
-                            <img id="gmail_logo" src="img/gmail.png" />
+                            <img id="gmail_logo" src="./img/logos/gmail.png" />
                         </a>
                     </div>
                     <div id="scholar">
                         <a href="https://scholar.google.com/citations?user=CWtQ0FUAAAAJ&hl=en" target="_blank">
-                            <img id="scholar_logo" src="img/scholar.png" />
+                            <img id="scholar_logo" src="./img/logos/scholar.png" />
+                        </a>
+                    </div>
+                    <div id="orcid">
+                        <a href="https://orcid.org/0000-0001-6836-6971" target="_blank">
+                            <img id="scholar_logo" src="./img/logos/orcid.png" />
+                        </a>
+                    </div>
+                    <div id="twitter">
+                        <a href="https://twitter.com/_an4s_" target="_blank">
+                            <img id="twitter_logo" src="./img/logos/twitter.png" />
                         </a>
                     </div>
                     <div id="linkedin">
                         <a href="https://www.linkedin.com/in/maimtiaz/" target="_blank">
-                            <img id="linkedin_logo" src="img/linkedin.png" />
+                            <img id="linkedin_logo" src="./img/logos/linkedin.png" />
                         </a>
                     </div>
                     <div id="github">
                         <a href="https://github.com/an4s" target="_blank">
-                            <img id="github_logo" src="img/github.png" />
+                            <img id="github_logo" src="./img/logos/github.png" />
                         </a>
                     </div>
                     <div id="skype">
                         <a href="skype:anas-imtiaz?chat" onclick="handleEvent('S');">
-                            <img id="skype_logo" src="img/skype.png" />
+                            <img id="skype_logo" src="./img/logos/skype.png" />
                         </a>
                     </div>
                     <div id="maps">
                         <a href="https://goo.gl/maps/uCuDTzJ7NFE2" target="_blank">
-                            <img id="maps_logo" src="img/map.png" />
+                            <img id="maps_logo" src="./img/logos/map.png" />
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
+            Downloadables:
             <span id="download">
-                <a id="download_link" href="downloadables/resume.pdf" target="_blank">Download Resume</a>
+                <a id="download_link" href="./downloadables/resume.pdf" target="_blank">Resume</a>
+            </span>
+            |
+            <span id="download">
+                <a id="download_link" href="./downloadables/cv.pdf" target="_blank">CV</a>
+            </span>
+            |
+            <span id="download">
+                <a id="download_link" href="./downloadables/prospectus.pdf" target="_blank">Prospectus</a>
+            </span>
+            |
+            <span id="download">
+                <a id="download_link" href="./downloadables/thesis.pdf" target="_blank">Thesis</a>
             </span>
         </footer>
     </body>

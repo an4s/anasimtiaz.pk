@@ -1,0 +1,144 @@
+{
+    "news" : [
+        {
+            "date" : "Dec 13, 2021",
+            "news" : "I passed my Ph.D. dissertation defense!!"
+        },
+        {
+            "date" : "Dec 9, 2021",
+            "news" : "My Ph.D. dissertation defense is scheduled!",
+            "link" : "https://www.bu.edu/eng/departments/ece/events/?eid=261203"
+        },
+        {
+            "date" : "Jun 11, 2021",
+            "news" : "Our paper titled <b>\"Investigating Orphan Transactions in the Bitcoin Network\"</b> has been published in the June 2021 issue (volume 18, issue 2) of the <b>IEEE Transactions on Network and Service Management (TNSM)</b>!!",
+            "link" : "https://doi.org/10.1109/TNSM.2021.3056949"
+        },
+        {
+            "date" : "Jun 11, 2021",
+            "news" : "Our paper titled <b>\"Churn in the Bitcoin Network\"</b> has been published in the June 2021 issue (volume 18, issue 2) of the <b>IEEE Transactions on Network and Service Management (TNSM)</b>!!",
+            "link" : "https://doi.org/10.1109/TNSM.2021.3050428"
+        },
+        {
+            "date" : "Apr 13, 2021",
+            "news" : "I got married!!"
+        },
+        {
+            "date" : "Feb 4, 2021",
+            "news" : "Our paper titled <b>\"Investigating Orphan Transactions in the Bitcoin Network\"</b> is available under <b>Early Access</b> in IEEE Xplore",
+            "link" : "https://ieeexplore.ieee.org/document/9345789"
+        },
+        {
+            "date" : "Jan 27, 2021",
+            "news" : "Our paper titled <b>\"Investigating Orphan Transactions in the Bitcoin Network\"</b> has been accepted for publication in the <b>IEEE Transactions on Network and Service Management (TNSM)</b>!!"
+        },
+        {
+            "date" : "Jan 8, 2021",
+            "news" : "Our paper titled <b>\"Churn in the Bitcoin Network\"</b> is available under <b>Early Access</b> in IEEE Xplore",
+            "link" : "https://ieeexplore.ieee.org/document/9317824"
+        },
+        {
+            "date" : "Dec 22, 2020",
+            "news" : "Our paper titled <b>\"Churn in the Bitcoin Network\"</b> has been accepted for publication in the <b>IEEE Transactions on Network and Service Management (TNSM)</b>!!"
+        },
+        {
+            "date" : "Oct 16, 2020",
+            "news" : "I have passed my <b>Ph.D. Prospectus Defense</b>!!"
+        },
+        {
+            "date" : "Oct 13, 2020",
+            "news" : "My <b>Ph.D. Prospectus Defense</b> is scheduled for Friday, Oct 16, 2020",
+            "link" : "https://www.bu.edu/eng/about/eng-events/?eid=245873"
+        },
+        {
+            "date" : "Jun 4, 2020",
+            "news" : "BU ECE wrote an article on our <b>best paper award</b> in <b>ECE Spotlight</b>",
+            "link" : "http://www.bu.edu/eng/2020/06/04/ece-lab-group-receives-best-paper-award-for-work-on-bitcoin-performance/"
+        },
+        {
+            "date" : "Jun 1, 2020",
+            "news" : "I presented the paper titled <b>TxProbe: Discovering Bitcoin's Network Topology Using Orphan Transactions</b> at the <b>Tenth annual BU RISCS Seminar on Practical Security</b>",
+            "link" : "https://agile.bu.edu/fw/SOS"
+        },
+        {
+            "date" : "May 6, 2020",
+            "news" : "We have been invited to submit an extended version of our <b>IEEE ICBC 2020</b> paper to the <b>IEEE Transaction on Network and Service Management (TNSM)</b>!!",
+            "link" : "https://icbc2020.ieee-icbc.org/best-paper-runner-and-tnsm-inviations"
+        },
+        {
+            "date" : "May 6, 2020",
+            "news" : "Our paper submitted to <b>IEEE ICBC 2020</b> has won the <b>best paper award</b>!!",
+            "link" : "https://icbc2020.ieee-icbc.org/best-paper-runner-and-tnsm-inviations"
+        },
+        {
+            "date" : "Apr 29, 2020",
+            "news" : "Served as a judge in the <b>Massachusetts Science &amp; Engineering Fair</b>"
+        },
+        {
+            "date" : "Feb 8, 2020",
+            "news" : "Our paper titled <b>\"Characterizing Orphan Transactions in the Bitcoin Network\"</b> has been accepted for publication in the <b>2020 IEEE Internation Conference on Blockchain and Cryptocurrency (ICBC 2020)</b>!!"
+        },
+        {
+            "date" : "Dec 29, 2019",
+            "news" : "Our latest paper titled <b>\"Characterizing Orphan Transactions in the Bitcoin Network\"</b> is now available on arXiv",
+            "link" : "http://arxiv.org/abs/1912.11541"
+        },
+        {
+            "date" : "Jun 28, 2019",
+            "news" : "I presented on the topic of <b>selfish mining attacks in the Bitcoin network</b> at the <b>Ninth annual BU RISCS Seminar on Practical Security</b>",
+            "link" : "https://agile.bu.edu/fw/SOS/SeminarTwentyNineteen"
+        },
+        {
+            "date" : "May 17, 2019",
+            "news" : "I presented our paper at the <b>IEEE ICBC 2019</b> conference at SKT Tower, Seoul, South Korea",
+            "link" : "https://youtu.be/UHtc6S7DjaA?t=907"
+        },
+        {
+            "date" : "Apr 16, 2019",
+            "news" : "I presented our poster titled <b>Churn in the Bitcoin Network: Characterization and Impact</b> at the <b>New England Networking and Systems Day</b>"
+        },
+        {
+            "date" : "Mar 28, 2019",
+            "news" : "Served as a judge in the <b>Junior Science and Humanities Symposium - Southern New England Division</b>"
+        },
+        {
+            "date" : "Mar 28, 2019",
+            "news" : "Our submission titled <b>\"Churn in the Bitcoin Network: Characterization and Impact\"</b> has been accepted as a poster at the <b>New England Networking and Systems Day</b>!!"
+        },
+        {
+            "date" : "Feb 11, 2019",
+            "news" : "Our paper titled <b>\"Churn in the Bitcoin Network: Characterization and Impact\"</b> has been accepted for publication in the <b>2019 IEEE Internation Conference on Blockchain and Cryptocurrency (ICBC 2019)</b>!!"
+        },
+        {
+            "date" : "Jan 17, 2019",
+            "news" : "I gave a presentation titled <b>\"Churn in the Bitcoin Network- Characterization and Impact\"</b> at <b>CGSW 6.0</b>"
+        },
+        {
+            "date" : "Jan 7, 2019",
+            "news" : "I have been accepted as a <b>student speaker</b> at the <b>2019 CISE Graduate Student Workshop (CGSW 6.0)</b>!!",
+            "link" : "http://www.bu.edu/systems/cgsw-6-0-agenda/"
+        },
+        {
+            "date" : "Oct 31, 2018",
+            "news" : "I presented our poster titled <b>\"Measuring Bitcoin's Resilience to Churn\"</b> at the <b>ACM Internet Measurement Conference 2018</b>"
+        },
+        {
+            "date" : "Sep 30, 2018",
+            "news" : "Our submission titled <b>\"Measuring Bitcoin's Resilience to Churn\"</b> has been accepted as a poster at the <b>ACM Internet Measurement Conference 2018</b>!!",
+            "link" : "https://conferences.sigcomm.org/imc/2018/posters/"
+        },
+        {
+            "date" : "Jul 13, 2018",
+            "news" : "I presented on the topic of <b>anonymity in the Bitcoin network</b> at the <b>Eight annual BU RISCS Seminar on Practical Security</b>",
+            "link" : "https://agile.bu.edu/fw/SOS/SeminarTwentyEighteen"
+        },
+        {
+            "date" : "Jul 12, 2018",
+            "news" : "I have officially advanced to <b>Ph.D. Candidacy</b> status!!"
+        },
+        {
+            "date" : "Jul 11, 2018",
+            "news" : "I have successfully passed my RPC exam!!"
+        }
+    ]
+}

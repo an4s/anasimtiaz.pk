@@ -90,6 +90,12 @@
     padding-left: 20px;
 }
 
+#moocs_toggle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .moreLink, .pubLink, .pptLink, .revLink, .moocLink {
     text-decoration: none;
     color: black;

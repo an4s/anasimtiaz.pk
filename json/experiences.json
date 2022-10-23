@@ -2,6 +2,20 @@
     "experiences" : [
         {
             "head" : {
+                "title" : "Senior Software Engineer",
+                "company" : {
+                    "company_name" : "Bloomberg L.P.",
+                    "company_location" : "New York, USA"
+                },
+                "dates" : {
+                    "from" : "January, 2022",
+                    "to" : "Present"
+                }
+            },
+            "tasks" : []
+        },
+        {
+            "head" : {
                 "title" : "Doctoral Research Fellow",
                 "company" : {
                     "company_name": "Boston University",

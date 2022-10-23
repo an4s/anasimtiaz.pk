@@ -18,14 +18,12 @@
         </script>
         <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="./js/preLoad.js" type="text/javascript"></script>
         <script src="./js/beautify.js" type="text/javascript"></script>
         <script src="./js/handleEvent.js" type="text/javascript"></script>
         <script src="./js/toggleCollapse.js" type="text/javascript"></script>
         <script src="./lightbox2/dist/js/lightbox.js"></script>
-        <script src='./php/imgs.php'></script>
         <script src="./js/extractHTMLFromJSON.js" type="text/javascript"></script>
-        <script src="./js/removeScriptTags.js" type="text/javascript"></script>
+        <script src="./js/toggleMOOCList.js" type="text/javascript"></script>
         <!-- include external css files -->
         <link rel="stylesheet" type="text/css" href="./css/body.css">
         <link rel="stylesheet" type="text/css" href="./css/top_container.css">
@@ -38,14 +36,14 @@
         <link href="https://fonts.googleapis.com/css?family=Alegreya+SC" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:900&display=swap" rel="stylesheet">
-        <title>Muhammad Anas Imtiaz</title>
+        <title>Muhammad Anas Imtiaz, Ph.D.</title>
     </head>
 
     <body>
         <div id="container">
             <div id="top_container">
                 <div id="top_container_left_div">
-                    <div id="top_container_left_div_name">Muhammad Anas Imtiaz</div>
+                    <div id="top_container_left_div_name">Muhammad Anas Imtiaz, Ph.D.</div>
                     <div id="top_container_left_div_title"></div>
                     <script id="title_script" type="text/javascript">
                         extractJSON("title");
@@ -86,6 +84,7 @@
                             Professional Experience
                         </div>
                         <div id="experiences_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script id="experiences_script" type="text/javascript">
                             extractJSON("experiences");
@@ -101,7 +100,7 @@
                                     <div>
                                         <span class="title pointer" onclick="toggleCollapse(this);">
                                             <div id="collapse_div" class="collapse">+</div>
-                                            Ph.D. Computer Engineering
+                                            MS / Ph.D. Computer Engineering
                                         </span>
                                     </div>
                                     <div class="company">
@@ -113,7 +112,7 @@
                                         </div>
                                     </div>
                                     <div class="dates">
-                                        September, 2017 to Present
+                                        September, 2017 to January, 2022
                                     </div>
                                 </div>
                                 <div class="tasks">
@@ -230,19 +229,23 @@
                     </div>
                     <div id="moocs">
                         <div id="moocs_head">
-                            MOOCs/Certifications
+                            MOOCs &amp; Certifications
                         </div>
                         <div id="moocs_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="moocs_script" type="text/javascript">
-                            extractJSON("moocs");
+                            extractJSON("moocs_reduced");
                         </script>
+                        <div id="moocs_toggle" onclick="toggleMOOCList();">
+                        </div>
                     </div>
                     <div id="publications">
                         <div id="publications_head">
                             Publications
                         </div>
                         <div id="publications_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="publications_script" type="text/javascript">
                             extractJSON("publications");
@@ -253,6 +256,7 @@
                             Pre-prints
                         </div>
                         <div id="preprints_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="preprints_script" type="text/javascript">
                             extractJSON("preprints");
@@ -263,6 +267,7 @@
                             Presentations
                         </div>
                         <div id="presentations_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="presentations_script" type="text/javascript">
                             extractJSON("presentations");
@@ -273,6 +278,7 @@
                             Academic Reviews
                         </div>
                         <div id="reviews_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="reviews_script" type="text/javascript">
                             extractJSON("reviews");
@@ -283,6 +289,7 @@
                             Grants
                         </div>
                         <div id="grants_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="grants_script" type="text/javascript">
                             extractJSON("grants");
@@ -293,6 +300,7 @@
                             Extracurriculars
                         </div>
                         <div id="extracurriculars_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="extracurriculars_script" type="text/javascript">
                             extractJSON("extracurriculars");
@@ -308,7 +316,7 @@
                                     Urdu
                                 </div>
                                 <div class="circles">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90%">
                                         <circle class="filled_circle" cx="20" cy="11" r="10" />
                                         <circle class="filled_circle" cx="45" cy="11" r="10" />
                                         <circle class="filled_circle" cx="70" cy="11" r="10" />
@@ -322,7 +330,7 @@
                                     English
                                 </div>
                                 <div class="circles">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90%">
                                         <circle class="filled_circle" cx="20" cy="11" r="10" />
                                         <circle class="filled_circle" cx="45" cy="11" r="10" />
                                         <circle class="filled_circle" cx="70" cy="11" r="10" />
@@ -336,7 +344,7 @@
                                     Punjabi
                                 </div>
                                 <div class="circles">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="90%">
                                         <circle class="filled_circle" cx="20" cy="11" r="10" />
                                         <circle class="filled_circle" cx="45" cy="11" r="10" />
                                         <circle class="filled_circle" cx="70" cy="11" r="10" />
@@ -353,6 +361,7 @@
                             Skills
                         </div>
                         <div id="skills_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="skills_script" type="text/javascript">
                             extractJSON("skills");
@@ -363,6 +372,7 @@
                             Interests
                         </div>
                         <div id="interests_body">
+                            <span class="loading">Loading...</span>
                         </div>
                         <script class="extractor" id="interests_script" type="text/javascript">
                             extractJSON("interests");
@@ -424,14 +434,6 @@
             Downloadables:
             <span id="download">
                 <a id="download_link" href="./downloadables/resume.pdf" target="_blank">Resume</a>
-            </span>
-            |
-            <span id="download">
-                <a id="download_link" href="./downloadables/cv.pdf" target="_blank">CV</a>
-            </span>
-            |
-            <span id="download">
-                <a id="download_link" href="./downloadables/prospectus.pdf" target="_blank">Prospectus</a>
             </span>
             |
             <span id="download">

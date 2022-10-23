@@ -1,6 +1,36 @@
 {
     "moocs" : [
         {
+            "name"   : "Introduction to Fortran",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/bbf5b4c8ace270db06060b6f9d13e8ba9a14fb9fe06a017a7dc7fb7d6e643dc0"
+        },
+        {
+            "name"   : "Parallel and Concurrent Programming with C++ Part 2",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/1e94a945570288257a5d3ab5b542399e897d3db83e825aee9171bd930c2508f8"
+        },
+        {
+            "name"   : "Parallel and Concurrent Programming with C++ Part 1",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/df7bf429f1408356b585e1d5730b0a960eb793701477606dade206464a6066de"
+        },
+        {
+            "name"   : "C++: Advanced Topics",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/68d30e6c402c6adb5a6c938d47088158ab4fb9c406b49440f74e9af4a20bdd05"
+        },
+        {
+            "name"   : "C++ Templates and the STL",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/33fb36fc9c770366f08d29093f4ad6aa4b880da7f4a424cae3dcaf262d90753d"
+        },
+        {
+            "name"   : "You Need a Career Development Plan",
+            "issuer" : "LinkedIn Learning",
+            "link"   : "https://www.linkedin.com/learning/certificates/e442af612de2c437c4b6c1c96b9911f70918e65dd4d85f2953f53318eddcf4b0"
+        },
+        {
             "name"   : "SQL (Basic)",
             "issuer" : "HackerRank",
             "link"   : "https://www.hackerrank.com/certificates/78d7997da26e"

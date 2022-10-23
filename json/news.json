@@ -1,6 +1,28 @@
 {
     "news" : [
         {
+            "date" : "Aug 3, 2022",
+            "news" : "Our paper titled <b>\"Empirical Comparison of Block Relay Protocols\"</b> is available under <b>Early Access</b> in IEEE Xplore",
+            "link" : "https://ieeexplore.ieee.org/document/9849006"
+        },
+        {
+            "date" : "Jul 27, 2022",
+            "news" : "Our paper titled <b>\"Empirical Comparison of Block Relay Protocols\"</b> has been accepted for publication in the <b>IEEE Transactions on Network and Service Management (TNSM) Special Issue on Recent Advances on Blockchain for Network and Service Management</b>!!"
+        },
+        {
+            "date" : "May 19, 2022",
+            "news" : "I have been awarded my Ph.D. hood at the Boston University College of Engineering Graduate Convocation 2022!!",
+            "link" : "https://www.bu.edu/eng/current-students/grad/current-students-2/commencement"
+        },
+        {
+            "date" : "Jan 31, 2022",
+            "news" : "I have joined Bloomberg L.P. as a Senior Software Engineer!!"
+        },
+        {
+            "date" : "Jan 25, 2022",
+            "news" : "I graduated from Boston University with MS and Ph.D. in Computer Engineering!!"
+        },
+        {
             "date" : "Dec 13, 2021",
             "news" : "I passed my Ph.D. dissertation defense!!"
         },
